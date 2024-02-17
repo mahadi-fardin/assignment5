@@ -3,13 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google Font-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Tailwind Css-->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
     <title> BD Ticket</title>
+
+    <style>
+    .raleway{
+        font-family: "Raleway", sans-serif;
+
+ }
+.inter {
+  font-family: "Inter", sans-serif;
+  
+ }
+
+    </style>
+
+
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li>
+                    <a>About</a>
+                  </li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost  raleway font-extrabold text-3xl ">BD - Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li>
+                  <a>About</a>
+                </li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+              <a class="btn border-1 border-[#1DD10066] bg-[#1DD1001A]  raleway text-xl font-bold text-green-500">Bus <img src="images/bus-icon.png" alt=""></a>
+            </div>
+          </div>
+    </header>
 
-    <main></main>
+    <main>
+
+        <!--Banner -->
+
+        <section>
+            <div class="hero h-[850px]" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1 class="mb-5 text-6xl font-bold raleway  ">End-to-End Travel with </h1>
+                    <div>
+                        <h1 class=" text-[#1DD100] raleway text-6xl font-bold mb-5  ">
+                            P Paribahan
+                        </h1>
+                    </div>
+                    <p class=" w-[700px] mb-5 inter text-lg font-normal leading-8 ">It seems like your message got cut off. Could you please provide more context or clarify what you're referring to with "End-to-End Travel with</p>
+                    <button class="btn  border-0  px-7  bg-[#1DD100] raleway text-xl font-bold ">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- OFFERS -->
+
+
+        <section>
+            <div>
+                <div class="mt-12 mb-7">
+                    <h3 class="raleway font-bold text-5xl text-center">
+                        Best offers for you
+                    </h3>
+                </div>
+                <div class="flex gap-5 items-center justify-center mb-12 ">
+                    <div class=" flex    bg-[#FFBF0F] w-1/3 h-[220px] rounded-2xl text-center">
+                      
+                        <div class="mx-6">
+                            <h3 class="inter text-4xl font-black px-5 pt-9 py-5">15% OFF </h3>
+                            <p class="inter text-xl font-semibold px-5" >on your next purchase</p>
+                            <p class="inter text-lg font-medium  text-[#03071280]" > use by January 2024</p>
+                        </div>
+                        <img src="images/cupon-devider.png" alt="">
+                        <div class="mt-4 text-center">
+                            <h3 class="raleway font-bold text-2xl px-5 pt-10 text-center">NEW15 </h3>
+                            <p class="relaway text-xl font-medium text-[#03071280] ">Coupon Code</p>
+                        </div>
+                    </div>
+                    <div class=" flex  gap-10 bg-[#F78C9C] w-1/3 h-[220px] rounded-2xl text-center">
+                      
+                        <div>
+                            <h3 class="inter text-4xl font-black px-5 pt-9 py-5">20% OFF </h3>
+                            <p class="inter text-xl font-semibold px-5" >on your next purchase</p>
+                            <p class="inter text-lg font-medium  text-[#03071280] " > use by January 2024</p>
+                        </div>
+                        <img src="images/cupon-devider.png" alt="">
+                        <div class="mt-4">
+                            <h3 class="raleway font-bold text-2xl px-5 pt-10 pb-2 text-center">Couple 20 </h3>
+                            <p class="relaway text-xl font-medium text-[#03071280]">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mb-5">
+                    <button class=" px-4 py-4 relaway text-xl font-bold  border-2 border-[#1DD100] text-[#1DD100] rounded-xl ">See All Offers</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div>
+                <div class="text-center mb-9">
+                    <h3 class="raleway font-bold text-5xl">P.H Paribahan</h3>
+                    <p class="inter text-xl font-semibold px-5">Are you asking about a specific aspect of travel, a service, or something else? Let me know so I can assist you accordingly.</p>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+    </main>
 
     <footer></footer>
+
+    <script src="indiex.js"></script>
 </body>
 </html>
