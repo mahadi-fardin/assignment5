@@ -1,11 +1,11 @@
+ const allBtn = document.getElementsByClassName("seat");
 
+ let count = 0;
 
-const cards =document.querySelectorAll(".seat");
-
-console.log(cards);
-
-for (let index = 0; index < cards.length; index++ ){
-    const element = cards[index];
-
-    console.log(element);
-}
+ for (const btn of allBtn) {
+    btn.addEventListener("click", function (e) {
+        count = count + 1;
+        document.getElementById("seat-count").innerText = count
+        console.log(count);
+    });
+ }
