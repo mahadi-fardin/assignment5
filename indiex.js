@@ -89,34 +89,39 @@
      const couponCode = couponElement.split(" ").join("").toUpperCase();
      
      if (count >=4 ){
+
+
+      
    
       if (couponCode === "NEW15"){
    
-         setInnerText("grand-total", convertedTotal * 2);
+         
+
         const discountElement = document.getElementById("discountPrice");
+        const discountAmount = convertedTotal * 0.15;
         
-        discountElement.innerText = discountAmount;  
+        discountElement.innerText = discountAmount.toFixed(2);  
+        const restTotal = document.getElementById("grand-total");
+        restTotal.innerText =  convertedTotal - discountAmount.toFixed(2);
+
       
+
       }else {
         
-         alert("Invalid Code");
+         alert(" Coupon Code Invalid ");
       }
-   
-      if  (couponCode === "Couple20"){
-   
-         setInnerText("grand-total", convertedTotal * 2);
-         
-      }else  {
-         alert("Invalid Code")
-      }
-   
-     }else {
-        alert("please ");
+
+
+     } else  {
+        alert("please Select by 4 Seat in the Bus");
      }
    
    
    });
 
+
+
+   
 
   
        
@@ -143,4 +148,3 @@
 
 
 
- 
