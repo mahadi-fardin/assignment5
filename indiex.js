@@ -93,6 +93,9 @@
       if (couponCode === "NEW15"){
    
          setInnerText("grand-total", convertedTotal * 2);
+        const discountElement = document.getElementById("discountPrice");
+        
+        discountElement.innerText = discountAmount;  
       
       }else {
         
