@@ -93,7 +93,7 @@
 
       
    
-      if (couponCode === "NEW15"){
+      if (couponCode === "NEW15", "Couple 20"){
    
          
 
@@ -130,8 +130,10 @@
 
  let popup = document.getElementById("popup");
 
+ console.log(popup);
+
  function openPopup(){
-   popup.classList.add("open-popup");
+   popup.classList.add('open-popup');
  }
  
  function closePopup(){

@@ -125,14 +125,14 @@
 
         <section class="bus" id="bus">
             <div>
-                <div class="text-center mb-9">
+                <div class="text-center mb-20">
                     <h3 class="raleway font-bold text-5xl">P.H Paribahan</h3>
-                    <p class="inter text-xl font-semibold px-5">Are you asking about a specific aspect of travel, a service, or something else? Let me know so I can assist you accordingly.</p>
+                    <p class=" w-[700px] ml-[35rem] py-7 text-[#03071299] inter text-xl font-semibold px-5">Are you asking about a specific aspect of travel, a service, or something else? Let me know so I can assist you accordingly.</p>
                 </div>
                 
             </div>
 
-            <div class="flex gap-6 ml-4 bg-[#FFFFFF] rounded-3xl ">
+            <div class="flex gap-6 ml-6 bg-[#FFFFFF] rounded-3xl ">
               <div class="">
                 <img src="images/bus-logo.png" alt="">
                 <h3 class=" ml-24 -mt-16 mb-2 raleway font-bold text-3xl">Greenline Paribahan</h3>
@@ -295,24 +295,24 @@
                     <p class="py-4 inter font-medium text-base">Email ID</p>
                     <input class="w-[433px] h-[64px] border-2 border-stone-400 rounded-xl px-2" placeholder="Enter your email id"  type="email" name="" id="" required>
 
-                    <div class="popup py-8" >
-                      <button class="btn w-[433px] h-[64px] bg-[#1DD100] text-white text-3xl" onclick="openPopup()" >Next</button>
+                    <div class="  py-8" >
+                      <a  class="btn w-[433px] h-[64px] bg-[#1DD100] text-white text-3xl" href="#popup"  onclick="openPopup()"> Next</a>
                       
                       <div class="popup" id="popup">
                         <img src="images/success.png" alt="">
                         <h2>Thanks You!</h2>
-                        <P>Your details has been successfully submitted. Thanks!  </P>
-                        <button type="button" onclick="closePopup()">ok</button>
+                        <P>Thank you for Booking Our Bus Seats. 
+                          We are working hard to find the best service and deals for you. </P>
+                        <button type="button" id="popup"  onclick="closePopup()">Continue</button>
+                      </div>
+
+                      <div class="py-5">
+                        <a class="px-7 text-[#03071263] font-medium text-xl underline underline-offset-8" href="#">Terms and Conditions</a>
+                        <a class=" text-[#03071263] font-medium text-xl underline underline-offset-8" href="#">Cancellation Policy</a>
                       </div>
                       
                        
                     </div>
-
-                   
-                  
-
-                    
-                    
 
                   </form>
                   
@@ -329,8 +329,31 @@
 
 
     </main>
-
-    <footer></footer>
+    <footer class="footer p-10 bg-[#030712] text-neutral-content">
+      <aside>
+        <h1 class="raleway font-bold text-4xl px-4" >BD - Ticket</h1>
+        <p class=" raleway font-normal text-base">P-Ticket is a digital platform to make your </p>
+        <p class="raleway font-normal text-base">daily commuting better.</p>
+      </aside> 
+      <nav class="ml-[80rem]">
+        <h6 class="raleway font-bold text-base text-white">Download our app</h6> 
+        <div class="grid grid-flow-col gap-4 border-2 border-white rounded-lg py-3 px-4">
+          <img src="images/playstore.png" alt=""> 
+          <h2>GIT IT ON <br> Google Play </h2>
+        </div>
+      </nav>
+    </footer>
+    <footer class="footer items-center p-4 py-6 bg-[#030712] text-neutral-content">
+      <aside class="items-center grid-flow-col">
+        <p>Copyright © 2024 - All right reserved</p>
+      </aside> 
+      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <a>Terms & condition
+        </a>
+        <a>Return & refund policy</a>
+        <a>Privacy policy</a>
+      </nav>
+    </footer>
 
 
     <script src="indiex.js"></script>
