@@ -121,6 +121,7 @@
             </div>
         </section>
 
+<!--Bus Details-->
 
         <section class="bus" id="bus">
             <div>
@@ -138,7 +139,7 @@
                 <p class=" ml-24 Inter text-lg font-normal text-[#03071263]">Coach-009-WEB ! AC_Business</p>
 
                 <div class="ml-[800px] -mt-16 ">
-                  <button class=""><a class="btn px-6 py-3 border-1 border-[#1DD10066] bg-[#1DD1001A]  raleway text-xl font-bold text-green-500"> <img src="images/seat-green.png" alt=""> <span>28</span>Seats left</a></button>
+                  <button class=""><a class="btn px-6 py-3 border-1 border-[#1DD10066] bg-[#1DD1001A]  raleway text-xl font-bold text-green-500"> <img src="images/seat-green.png" alt=""> <span id="bus-seat">28</span>Seats left</a></button>
                 </div>
 
                 <div class="mt-10 bg-[#F7F8F8] rounded-3xl divide-y divide-dashed">
@@ -170,7 +171,7 @@
               <img  src="images/info-devider.png" alt="">
               <div class=" ml-[320px] mt-[150px]">
                 <img class="ml-8 mb-3" src="images/fare.png" alt="">
-                <h3 class="raleway font-bold text-4xl text-center">550 TaKa </h3>
+                <h3 class="raleway font-bold text-4xl text-center"><span id="">550 </span>TaKa </h3>
                 <p class="raleway font-semibold text-2xl text-center">Per Seat</p>
               </div>
             </div>
@@ -267,9 +268,12 @@
                       <p class="inter font-medium text-base">Price</p>
                     </div>
                     <hr >
+                    <ul id="select-place-contained" class="select-place-contained">
+                      
+                    </ul>
                     <div class="flex gap-20 justify-between py-4">
                       <h5 class=" px-4 inter font-medium text-base">Total Price</h5>
-                      <p class=" px-4 inter font-medium text-base">BDT<span>0</span></p>
+                      <p class=" px-4 inter font-medium text-base">BDT  <span id="total-price">0</span></p>
                     </div>
                     
                     <div>
@@ -280,7 +284,7 @@
                     </div>
                     <div class="flex gap-20 py-5 px-4 justify-between">
                       <h5 class="inter font-medium text-base">Grand Total</h5>
-                      <p class="inter font-medium text-base">BDT<span>0</span></p>
+                      <p class="inter font-medium text-base">BDT  <span id="grand-total">0</span></p>
                     </div>
             </div>
                   <div>

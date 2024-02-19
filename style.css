@@ -36,3 +36,14 @@
     font-size: 18px;
     font-weight: 500;
    }
+
+   li{
+    display: flex;
+    justify-content: space-between;
+    gap: 290px;
+    width: 200px;
+    margin: auto;
+    margin-left: 45px;
+    text-align: center;
+    list-style: numeric;
+   }
