@@ -50,18 +50,10 @@
 
         
         total ("total-price", parseInt(price));
+        grandTotal ("grand-total", parseInt(price));
 
-        const grandTotal = document.getElementById("grand-total").innerText;
-        const convertedGrandTotal = parseInt(grandTotal);
-        const sum2 = convertedGrandTotal + parseInt(price);
-
-       
-
-
-
-
+      
         
-        setInnerText("grand-total", sum2)
         setInnerText("seat-count" , count)
 
 
@@ -80,8 +72,72 @@
  }
 
 
+ function grandTotal () {
+   const total = document.getElementById("total-price").innerText;
+   const convertedTotal = parseInt(total);
+   
+   setInnerText("grand-total", convertedTotal)
+
+
+
+   const btn = document.getElementById("apply-btn");
+   btn.addEventListener("click", function () {
+     
+     
+   
+     const couponElement = document.getElementById("input-field").value;
+     const couponCode = couponElement.split(" ").join("").toUpperCase();
+     
+     if (count >=4 ){
+   
+      if (couponCode === "NEW15"){
+   
+         setInnerText("grand-total", convertedTotal * 2);
+      
+      }else {
+        
+         alert("Invalid Code");
+      }
+   
+      if  (couponCode === "Couple20"){
+   
+         setInnerText("grand-total", convertedTotal * 2);
+         
+      }else  {
+         alert("Invalid Code")
+      }
+   
+     }else {
+        alert("please ");
+     }
+   
+   
+   });
+
+
+  
+       
+ }
+
+
+ let popup = document.getElementById("popup");
+
+ function openPopup(){
+   popup.classList.add("open-popup");
+ }
+ 
+ function closePopup(){
+   popup.classList.remove("open-popup");
+ }
+ 
+ 
+
 
  function setInnerText (id, value) {
     document.getElementById(id).innerText = value;
     
  }
+
+
+
+ 
